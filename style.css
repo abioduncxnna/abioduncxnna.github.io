@@ -371,3 +371,18 @@ footer {
     transition: none;
   }
 }
+
+a:focus-visible,
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.employer {
+  color: var(--muted);
+  margin: -6px 0 16px;
+}
+
+.employer strong {
+  color: var(--text);
+}
