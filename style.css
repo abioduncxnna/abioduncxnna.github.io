@@ -263,3 +263,88 @@ footer {
   }
 
 }
+
+.card p + p {
+  margin-top: 8px;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  counter-reset: step;
+}
+
+.steps li {
+  position: relative;
+  padding-left: 56px;
+  margin-bottom: 24px;
+  counter-increment: step;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.steps h3 {
+  margin: 0 0 4px;
+}
+
+.steps p {
+  margin: 0;
+  color: var(--muted);
+}.proof {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.proof li {
+  border-left: 3px solid var(--accent);
+  padding-left: 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.proof strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+#coverage > p {
+  color: var(--muted);
+  max-width: 640px;
+}
+
+#coverage .tag {
+  margin-bottom: 6px;
+}
+
+.projects {
+  grid-template-columns: 1fr;
+}
+
+.card strong {
+  color: var(--text);
+}
+
+.card p + p {
+  margin-top: 8px;
+}
